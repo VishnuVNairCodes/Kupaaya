@@ -1,0 +1,58 @@
+:root {
+  --bg: #e7f7fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body,
+.outer-container {
+  height: 100%;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg);
+  padding-bottom: 2rem;
+}
+
+/* || Navigation || */
+.navigation-container {
+  background-color: var(--white);
+}
+
+.navigation-brand {
+  font-size: 2.25rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.navigation-bar .textbox-icon-container {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.navigation-bar ::placeholder {
+  color: var(--primary);
+}
+
+.navigation-bar .textbox {
+  outline: none;
+  caret-color: var(--primary);
+}
+
+.navigation-login > .btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.navigation-action .btn-icon {
+  font-size: 2rem;
+}

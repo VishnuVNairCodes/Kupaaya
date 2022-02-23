@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CDN of Component Library -->
+    <link rel="stylesheet" href="https://minnal-ui.netlify.app/styles.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/products.css" />
+    <title>Kupaaya</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="navigation-container">
+        <nav class="navigation-bar">
+          <a href="/index.html" class="navigation-brand">Kupaaya</a>
+          <div class="textbox-icon-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" class="textbox" />
+          </div>
+          <ul class="navigation-action">
+            <li class="navigation-login">
+              <a class="btn btn-primary" href="/">Login</a>
+            </li>
+            <li class="navigation-wishlist">
+              <div class="container-badge">
+                <a class="btn-icon" href="/"
+                  ><i class="fa-solid fa-heart"></i
+                ></a>
+                <div class="badge-notification">22</div>
+              </div>
+            </li>
+            <li class="navigation-cart">
+              <div class="container-badge">
+                <a class="btn-icon" href="/"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+                <div class="badge-notification">11</div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <section class="sidebar">
+          <ul class="filters-list">
+            <h4 class="filters-list-heading">
+              Filters<button class="btn btn-secondary-outline h5">Clear</button>
+            </h4>
+            <li class="filters-list-item price-slider">
+              <h4 class="price-slider-heading">Price</h4>
+              <div class="price-slider-container">
+                <div class="price-range">
+                  <span>₹ 200</span>
+                  <span>₹ 10000</span>
+                </div>
+                <input
+                  type="range"
+                  min="200"
+                  max="10000"
+                  value="5000"
+                  class="price-slider"
+                />
+              </div>
+            </li>
+            <li class="filter-list-item category">
+              <h4 class="category-heading">Category</h4>
+              <div class="checkbox-container">
+                <label>
+                  <input type="checkbox" class="checkbox" />Baby Clothing
+                </label>
+                <label>
+                  <input type="checkbox" class="checkbox" checked />Baby
+                  Clothing
+                </label>
+                <label>
+                  <input type="checkbox" class="checkbox" />Baby Clothing
+                </label>
+              </div>
+            </li>
+            <li class="filter-list-item rating">
+              <h4 class="rating-heading">Rating</h4>
+              <div class="radio-container">
+                <label>
+                  <input type="radio" name="rating" class="radio" />4 Stars &
+                  above
+                </label>
+                <label>
+                  <input type="radio" name="rating" class="radio" checked />3
+                  Stars & above
+                </label>
+                <label>
+                  <input type="radio" name="rating" class="radio" />2 Stars &
+                  above
+                </label>
+                <label>
+                  <input type="radio" name="rating" class="radio" />1 Stars &
+                  above
+                </label>
+              </div>
+            </li>
+            <li class="filter-list-item sort">
+              <h4 class="sort-heading">Sort By</h4>
+              <div class="radio-container">
+                <label>
+                  <input type="radio" name="sort" class="radio" />High to Low
+                </label>
+                <label>
+                  <input type="radio" name="sort" class="radio" checked />Low to
+                  High
+                </label>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="main">
+          <div class="card-container shadow">
+            <div class="card-badge">Best Seller</div>
+            <div class="card-image-container">
+              <img
+                class="card-image"
+                src="/assets/baby-boy-dress.webp"
+                alt="card"
+              />
+            </div>
+            <div class="card-details-container">
+              <div class="card-details-header">
+                <div class="card-text-container">
+                  <h1 class="card-text-heading">BABY GO</h1>
+                  <p class="card-text-description">
+                    Infant Boys Cotton Rompers
+                  </p>
+                </div>
+                <button class="btn-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-price-container">
+                <p class="card-price">Rs.557</p>
+                <p class="card-price-old">Rs.899</p>
+                <p class="card-price-offer">38% off</p>
+              </div>
+              <div class="card-button-container">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-container shadow">
+            <div class="card-badge">Best Seller</div>
+            <div class="card-image-container">
+              <img
+                class="card-image"
+                src="/assets/baby-girl-dress.jpg"
+                alt="card"
+              />
+            </div>
+            <div class="card-details-container">
+              <div class="card-details-header">
+                <div class="card-text-container">
+                  <h1 class="card-text-heading">Pantaloons Baby</h1>
+                  <p class="card-text-description">Infant Girls Cotton Dress</p>
+                </div>
+                <button class="btn-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-price-container">
+                <p class="card-price">Rs.1,000</p>
+                <p class="card-price-old">Rs.700</p>
+                <p class="card-price-offer">30% off</p>
+              </div>
+              <div class="card-button-container">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-container shadow">
+            <div class="card-badge">Best Seller</div>
+            <div class="card-image-container">
+              <img
+                class="card-image"
+                src="/assets/baby-boy-dress.webp"
+                alt="card"
+              />
+            </div>
+            <div class="card-details-container">
+              <div class="card-details-header">
+                <div class="card-text-container">
+                  <h1 class="card-text-heading">BABY GO</h1>
+                  <p class="card-text-description">
+                    Infant Boys Cotton Rompers
+                  </p>
+                </div>
+                <button class="btn-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-price-container">
+                <p class="card-price">Rs.557</p>
+                <p class="card-price-old">Rs.899</p>
+                <p class="card-price-offer">38% off</p>
+              </div>
+              <div class="card-button-container">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
